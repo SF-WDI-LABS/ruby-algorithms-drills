@@ -1,3 +1,4 @@
+# A linked list is very similar to how you'd use an Array
 class Node
   def initialize(value = nil, next_node = nil)
     @data = value
@@ -27,6 +28,10 @@ class LinkedList
   def initialize
     @head = nil
     @size = 0
+  end
+
+  def to_s
+    items
   end
 
   def add(data)
